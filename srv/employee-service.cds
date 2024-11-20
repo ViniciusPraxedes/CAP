@@ -4,10 +4,8 @@ using db as db from '../db/schema';
 service EmployeesService {
     entity Employees as projection on db.Employee;
 }
-annotate EmployeesService with @(requires: 'support');
+//annotate EmployeesService with @(requires: 'support');
+//annotate EmployeesService.Employees with @odata.draft.enabled; 
 
-@cds.redirection.target
-service ManagersService {
-    entity Managers as projection on db.Manager;
-}
-annotate ManagersService with @(requires: 'admin');
+
+

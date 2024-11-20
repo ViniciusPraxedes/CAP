@@ -1,35 +1,9 @@
 {
   "xsappname": "CAP",
   "tenant-mode": "dedicated",
-  "scopes": [
-    {
-      "name": "$XSAPPNAME.support",
-      "description": "support"
-    },
-    {
-      "name": "$XSAPPNAME.admin",
-      "description": "admin"
-    }
-  ],
+  "scopes": [],
   "attributes": [],
-  "role-templates": [
-    {
-      "name": "support",
-      "description": "generated",
-      "scope-references": [
-        "$XSAPPNAME.support"
-      ],
-      "attribute-references": []
-    },
-    {
-      "name": "admin",
-      "description": "generated",
-      "scope-references": [
-        "$XSAPPNAME.admin"
-      ],
-      "attribute-references": []
-    }
-  ],
+  "role-templates": [],
   "oauth2-configuration": {
     "credential-types": [
       "binding-secret",
