@@ -6,6 +6,7 @@
   "license": "UNLICENSED",
   "private": true,
   "dependencies": {
+    "@cap-js/audit-logging": "^0.8.1",
     "@cap-js/change-tracking": "^1.0.7",
     "@cap-js/hana": "^1",
     "@sap/cds": "^8",
