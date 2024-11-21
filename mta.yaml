@@ -116,6 +116,8 @@ modules:
               sap.cloud.service: CAP.service
 
 resources:
+  
+
   - name: CAP-auth
     type: org.cloudfoundry.managed-service
     parameters:
@@ -149,12 +151,23 @@ resources:
                 Type: HTTP
                 ProxyType: Internet
     requires:
+    
       - name: srv-api
         group: destinations
         properties:
           name: srv-api # must be used in xs-app.json as well
           url: ~{srv-url}
           forwardAuthToken: true
+
+
+  - name: cap-auditlog
+    parameters:
+      service-plan: default
+      service: auditlog-management
+    type: org.cloudfoundry.managed-service
+
+
+
   - name: CAP-db
     type: com.sap.xs.hdi-container
     parameters:
