@@ -3,7 +3,7 @@ using db as db from '../db/schema';
 service EmployeesService {
 
 
-    annotate EmployeesService with @(requires: 'admin');
+    //annotate EmployeesService with @(requires: 'admin');
     entity Employees as projection on db.Employee;
 
 
